@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
-builder.Services.AddSingleton<StateBag>();
+builder.Services.AddScoped<StateBag>();
 
 var app = builder.Build();
 
